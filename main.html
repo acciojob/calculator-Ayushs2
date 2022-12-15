@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="script" href="script.js">
 </head>
+<body>  
+    <script>function display(val){
+        document.getElementById('result').value+=val;
+        return val;
+    }
+    function solve(){
+      let x =  document.getElementById("result").value
+      let y = eval(x);
+      document.getElementById("result").value = y;
+      return y;
+    }
+    function clearScreen(){
+        document.getElementById("result").value = ''
+    }
+    </script>
+</iframe>
+<h1 class="h1">Calculator</h1>
+    <div class="container">
+        <table>
+            <tr id = "k">
+                <td  colspan="3">
+                    <input type="text" id="result" class="screen">
+                </td>
+                <td>
+                    <input type="button" id ="clr" value="C" onclick="clearScreen()"  class="clear">
+                </td>
+            </tr>
+        </table>
+         <div class="keys">
+            <input id="block7" type="button" value="7" class="button" onclick="display('7')"></input>
+            <input id="block8" type="button" value="8" class="button" onclick="display('8')"></input>
+            <input id="block9" type="button" value="9" class="button" onclick="display('9')"></input>
+            <input id="divide" type="button" value="/" class="operator" onclick="display('/')"></input>
+            <br>
+            <input id="block4" type="button" value="4" class="button" onclick="display('4')"></input>
+            <input id="block5" type="button" value="5" class="button" onclick="display('5')"></input>
+            <input id="block6" type="button" value="6" class="button" onclick="display('6')"></input>
+            <input id="multiply" type="button" value="*" class="operator" onclick="display('*')"></input>
+            <br>
+            
+            <input id="block1" type="button" value="1" class="button" onclick="display('1')"></input>
+            <input id="block2" type="button" value="2" class="button" onclick="display('2')"></input>
+            <input id="block3" type="button" value="3" class="button" onclick="display('3')"></input>
+            <input id="minus" type="button" value="-" class="operator" onclick="display('-')"></input>
+            <br>
+            
+            <input id="block7" type="button" value="0" class="button" onclick="display('0')"></input>
+            <input id="dot" type="button" value="." class="operator" onclick="display('.')"></input>
+            <input id="equals" type="button" value="=" class="button equal-sign" onclick="solve()"></input>
+            <input id="plus" type="button" value="+" class="operator" onclick="display('+')"></input>
+        </div>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    </div>
 
 </body>
-
 </html>
