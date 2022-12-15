@@ -1,2 +1,77 @@
+body {
+    min-height: 100vh;
+    font-family: 'Mukta Malar', Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F9FF;  
+    
+}
+.h1{
+    color: rgb(30, 30, 30);
+    text-align: center;
+    display: flex;
 
-/* Your CSS Code here. */
+}
+div {
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    background-color: rgb(140, 148, 151);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Mukta Malar', Arial;
+   
+
+}
+.container{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+.button{
+    color: black;
+    padding: 2px;
+    margin: auto;
+    align-self:auto;
+    display: ruby;
+    border: 20px;
+    width: 20%;
+    
+}
+.button:hover{
+    background-color: rgb(194, 170, 119);
+    color: black;
+    padding: 2px 2px;
+}
+.clear.button{
+    width: 20%;
+    padding: 20px;
+    
+}
+.operator{
+    width: 20%;
+}
+input.screen{ border-style: solid;
+
+border: 5px; 
+display: flex;
+align-self: center; 
+display: block;
+width: 100%; 
+padding: 5px 15px;
+line-height: 15px;
+font-size: 14px; 
+font-weight: 500; 
+font-family: inherit;
+border-radius: 6px; 
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px; 
+-ms-border-radius: 6px;
+ -o-border-radius: 6px;
+}
